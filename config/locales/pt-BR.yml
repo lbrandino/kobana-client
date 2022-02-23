@@ -1,5 +1,6 @@
 pt-BR:
   pix_saved: Pix gerado com sucesso!
+  pix_deleted: Pix deletado com sucesso!
   activerecord:
     errors:
       messages:

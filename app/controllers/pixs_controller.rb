@@ -5,27 +5,35 @@ class PixsController < ApplicationController
     @pixs = Kobana::IndexPix.new.call
   end
 
-  def new; end
+  def new ;end
 
   def create
     response = Kobana::CreatePix.new(params).call
-    if response.success?
-        redirect_to pixs_path,notice: t(:pix_saved)
-    else 
-       flash[:alert] = response.errors
-       redirect_to new_pix_path
-    end 
+    response_to(response,t(:pix_saved))
   end
 
   def show; end
 
+  def destroy
+    response = Kobana::DestroyPix.new.call(id:params[:id])
+     response_to(response,t(:pix_deleted))
+  end
+
+  def response_to(response,notice)
+     if response.success?
+        redirect_to pixs_path, notice: notice
+    else
+        flash[:alert] = response.errors
+        redirect_to pixs_path
+    end 
+  end
+
    private
     def set_pix
       response = Kobana::ShowPix.new.call(id:params[:id])
-      unless response.success?
-          flash[:alert] = response.errors
-          redirect_to pixs_path
-          p "passou"
+      unless response.success?        
+        flash[:alert] = response.errors
+        redirect_to pixs_path
       end
       
       @pix = response.pix

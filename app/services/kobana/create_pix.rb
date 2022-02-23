@@ -9,7 +9,7 @@ module Kobana
 
     def call
       response = self.class.post("/pix", body: body)
-      return response.body if response.success?
+      return response if response.success?
 
       OpenStruct.new({success?: false, errors: request_error(response)})
     end

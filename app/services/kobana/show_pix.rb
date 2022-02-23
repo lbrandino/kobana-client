@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-#require "pix"
 module Kobana
     class ShowPix < Base
          def call(id:)

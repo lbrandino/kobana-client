@@ -17,6 +17,9 @@
         <td><%= pix.document_number %></td>
         <td><%= pix.status %></td>
         <td><%= link_to 'Exibir', pix_path(pix.id) %></td>
+        <td><%= link_to 'Delete', pix_path(pix.id),
+            data: {turbo_method: :delete, turbo_confirm: 'Tem certeza?'} %>
+        </td>
       </tr>
     <% end %>
   </tbody>

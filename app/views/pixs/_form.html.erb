@@ -1,12 +1,11 @@
 <%= form_with local: true, url: pixs_path, method: :post do |form| %>
-  <div>
-    <%= form.label :amount, "Valor:" %><br>
-    <%= form.text_field :amount %><br>
-    <%= form.label :name, "Nome:" %><br>
-    <%= form.text_field :name %><br>
-    <%= form.label :document_number, "Documento:" %><br>
-    <%= form.text_field :document_number %><br>
-    <%= form.label :txid, "Txid:" %><br>
-    <%= form.text_field :txid %><br>
-    <%= form.submit "Gerar Pix" %>
-  <% end %>
+  <%= form.label :amount, "Valor:" %><br>
+  <%= form.text_field :amount %><br>
+  <%= form.label :name, "Nome:" %><br>
+  <%= form.text_field :name %><br>
+  <%= form.label :document_number, "Documento:" %><br>
+  <%= form.text_field :document_number %><br>
+  <%= form.label :txid, "Txid:" %><br>
+  <%= form.text_field :txid %><br>
+  <%= form.submit "Gerar Pix" %>
+<% end %>

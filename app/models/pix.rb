@@ -1,5 +1,5 @@
 class Pix
-  def initialize(attributes)
+  def initialize(attributes=nil)
     @attributes = attributes 
   end
 
