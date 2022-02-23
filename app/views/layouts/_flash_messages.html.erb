@@ -1,0 +1,9 @@
+<% flash.each do |type, message| %>
+  <p class="flash-message <%= type %>">
+    <%if message.present?%>
+      <% message.each do |msg| %>
+        <%= msg %><br>
+      <%end%>
+    <%end%>
+  </p>
+<% end %>
