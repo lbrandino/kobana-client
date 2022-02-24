@@ -28,11 +28,11 @@ class PixsController < ApplicationController
   end
 
   def response_to(response,notice)
-     if response.success?
-        redirect_to pixs_path, notice: notice
+    if response.success?
+       redirect_to pixs_path, notice: notice
     else
-        flash[:alert] = response.errors
-        redirect_to pixs_path
+       flash[:alert] = response.errors
+       redirect_to pixs_path
     end 
   end
 
