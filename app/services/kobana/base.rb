@@ -5,11 +5,11 @@ require_relative "../../../lib/kobana_api/pix_parser"
 module Kobana 
   class Base 
       include HTTParty
-      base_uri "https://api-sandbox.kobana.com.br/v2/charge"  #ENV.fetch('ML_API_URL')
+      base_uri ENV.fetch('KOBANA_API_URL') 
 
       headers 'Accept' => 'application/json' 
-      headers 'User-Agent' => 'KOBANA Client <grupolpgomes@gmail.com>'
-      headers 'Authorization' => 'Bearer 1XPbrJ584Xh_uOJ8PlxIGko9-2fPFdz79eO5Jsdn3Ig'
+      headers 'User-Agent' => ENV.fetch('KOBANA_USER_AGENT')
+      headers 'Authorization' => "Bearer #{ENV.fetch('KOBANA_BEARER')}"
 
 
     def request_error(response)
