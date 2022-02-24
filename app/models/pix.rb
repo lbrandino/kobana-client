@@ -7,6 +7,10 @@ class Pix
     @attributes['id'] 
   end
 
+  def amount
+    @attributes['amount'] 
+  end
+
   def txid 
     @attributes['id']
   end
@@ -29,6 +33,14 @@ class Pix
 
   def document_number   
     @attributes.dig('payer', 'document_number')
+  end
+
+  def created_at
+     @attributes['created_at']
+  end
+
+  def expire_at
+    @attributes['expire_at']
   end
 
 end

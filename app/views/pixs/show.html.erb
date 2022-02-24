@@ -5,6 +5,10 @@
   <%= @pix.id %>
 </p>
 <p>
+  <strong>Valor:</strong>
+  <%= @pix.amount %>
+</p>
+<p>
   <strong>Name:</strong>
   <%= @pix.name %>
 </p>
@@ -15,5 +19,13 @@
 <p>
   <strong>Status:</strong>
   <%= @pix.status %>
+</p>
+<p>
+  <strong>Data de criação:</strong>
+  <%= @pix.created_at %>
+</p>
+<p>
+  <strong>Validade:</strong>
+  <%= @pix.expire_at %>
 </p>
 <%= link_to 'Voltar', pixs_path %>

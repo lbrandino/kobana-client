@@ -2,17 +2,24 @@ class PixsController < ApplicationController
   before_action :set_pix, only: %i[ show edit update destroy ]
   
   def index
-    @pixs = Kobana::IndexPix.new.call
+    @pixs = Kobana::IndexPix.new.call  
   end
+  
+  def show; end
 
-  def new ;end
+  def new; end
 
   def create
     response = Kobana::CreatePix.new(params).call
     response_to(response,t(:pix_saved))
   end
 
-  def show; end
+  def edit; end
+
+  def cancel
+    response = Kobana::CancelPix.new.call(id:params[:id])
+    response_to(response,t(:pix_caceled))
+  end
 
   def destroy
     response = Kobana::DestroyPix.new.call(id:params[:id])

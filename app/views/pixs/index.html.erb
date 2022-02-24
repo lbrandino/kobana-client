@@ -3,22 +3,27 @@
   <thead>
     <tr>
       <th>Id</th>
+      <th>Valor</th>
       <th>Nome</th>
       <th>Documento</th>
       <th>Status</th>
-      <th colspan="3"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
   <tbody>
     <% @pixs.each do |pix| %>
       <tr>
         <td><%= pix.id %></td>
+        <td><%= pix.amount %></td>
         <td><%= pix.name %></td>
         <td><%= pix.document_number %></td>
         <td><%= pix.status %></td>
         <td><%= link_to 'Exibir', pix_path(pix.id) %></td>
+        <td><%= link_to 'Cancelar', cancel_pix_path(pix.id),
+            data: {turbo_method: :put, turbo_confirm: 'Tem certeza de que quer cancelar?'} %>
+        </td>
         <td><%= link_to 'Delete', pix_path(pix.id),
-            data: {turbo_method: :delete, turbo_confirm: 'Tem certeza?'} %>
+            data: {turbo_method: :delete, turbo_confirm: 'Tem certeza de que quer excluir?'} %>
         </td>
       </tr>
     <% end %>

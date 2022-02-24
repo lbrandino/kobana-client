@@ -7,7 +7,7 @@ module Kobana
       @attributes = attributes
     end
 
-    def call
+    def call    
       response = self.class.post("/pix", body: body)
       return response if response.success?
 
@@ -19,7 +19,7 @@ module Kobana
           payer: payer,
           amount: @attributes['amount'],
           pix_account_id: 24,
-          expire_at: '2022-03-02T10:03:56-03:00'
+          expire_at: DateTime.iso8601(@attributes['expire_at'])
         }
     end
 

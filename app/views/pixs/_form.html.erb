@@ -7,5 +7,7 @@
   <%= form.text_field :document_number %><br>
   <%= form.label :txid, "Txid:" %><br>
   <%= form.text_field :txid %><br>
+  <%= form.label :expire_at, "Data e hora de vencimento:" %><br>
+  <%= form.datetime_local_field :expire_at %><br>
   <%= form.submit "Gerar Pix" %>
 <% end %>
