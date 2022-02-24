@@ -1,0 +1,86 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api-sandbox.kobana.com.br/v2/charge/pix
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - KOBANA Client <grupolpgomes@gmail.com>
+      Authorization:
+      - Bearer 1XPbrJ584Xh_uOJ8PlxIGko9-2fPFdz79eO5Jsdn3Ig
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Cowboy
+      X-Frame-Options:
+      - DENY
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Expect-Ct:
+      - max-age=0, report-uri="https://boletosimples.report-uri.com/r/d/ct/reportOnly"
+      Cross-Origin-Resource-Policy:
+      - cross-origin
+      Cross-Origin-Embedder-Policy:
+      - unsafe-none
+      Cross-Origin-Opener-Policy:
+      - unsafe-none
+      X-Ratelimit-Limit:
+      - '60'
+      X-Ratelimit-Remaining:
+      - '59'
+      Etag:
+      - W/"f69c8c9e60f351c4124fb47bcbf9e053"
+      Cache-Control:
+      - must-revalidate, private, max-age=0
+      X-Request-Id:
+      - 95fef920-99fd-496a-84e7-83deb306135d
+      X-Runtime:
+      - '0.055208'
+      Date:
+      - Thu, 24 Feb 2022 13:42:48 GMT
+      X-Rack-Cache:
+      - miss
+      Strict-Transport-Security:
+      - max-age=31556952; includeSubDomains; preload
+      Vary:
+      - Origin,Accept-Encoding
+      X-Rack-Cors:
+      - miss; no-origin
+      Via:
+      - 1.1 vegur, 1.1 1d70b90303ff56b86662db87683a2a04.cloudfront.net (CloudFront)
+      X-Cache:
+      - Miss from cloudfront
+      X-Amz-Cf-Pop:
+      - MIA3-C1
+      X-Amz-Cf-Id:
+      - nICBWynzmdjhppC73loBBgXZgUkTIyL-pGlyp3TdaJ80DFyssj5TSg==
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        eyJkYXRhIjpbeyJpZCI6MjMsInR4aWQiOm51bGwsInN0YXR1cyI6Im9wZW5lZCIsInBpeF9hY2NvdW50X2lkIjoyNCwicGF5ZXIiOnsibmFtZSI6IlRlc3RlIG5vdm8iLCJkb2N1bWVudF9udW1iZXIiOiIwMjQzOTI4NzE4MCJ9LCJxcmNvZGUiOnsiZW12IjpudWxsLCJwbmciOm51bGx9LCJjcmVhdGVkX2F0IjoiMjAyMi0wMi0yM1QyMjoyMToyNi0wMzowMCIsImFtb3VudCI6ODk2LjAsImV4cGlyZV9hdCI6IjIwMjItMDItMjNUMTk6MjQ6MDAtMDM6MDAiLCJjb21tYW5kX2lkcyI6W119LHsiaWQiOjIyLCJ0eGlkIjpudWxsLCJzdGF0dXMiOiJvcGVuZWQiLCJwaXhfYWNjb3VudF9pZCI6MjQsInBheWVyIjp7Im5hbWUiOiJWYW5lc3NhIFZhbGFkw6NvIiwiZG9jdW1lbnRfbnVtYmVyIjoiMDI0MzkyODcxODAifSwicXJjb2RlIjp7ImVtdiI6bnVsbCwicG5nIjpudWxsfSwiY3JlYXRlZF9hdCI6IjIwMjItMDItMjNUMjE6MjQ6MTAtMDM6MDAiLCJhbW91bnQiOjQ1Ni4wLCJleHBpcmVfYXQiOiIyMDIyLTAzLTAyVDEwOjAzOjU2LTAzOjAwIiwiY29tbWFuZF9pZHMiOltdfSx7ImlkIjoyMSwidHhpZCI6bnVsbCwic3RhdHVzIjoib3BlbmVkIiwicGl4X2FjY291bnRfaWQiOjI0LCJwYXllciI6eyJuYW1lIjoiTm92byBUZXN0ZSIsImRvY3VtZW50X251bWJlciI6IjAyNDM5Mjg3MTgwIn0sInFyY29kZSI6eyJlbXYiOm51bGwsInBuZyI6bnVsbH0sImNyZWF0ZWRfYXQiOiIyMDIyLTAyLTIzVDE5OjExOjIyLTAzOjAwIiwiYW1vdW50IjoyMDAyLjAsImV4cGlyZV9hdCI6IjIwMjItMDMtMDJUMTA6MDM6NTYtMDM6MDAiLCJjb21tYW5kX2lkcyI6WzEsMyw1XX0seyJpZCI6MjAsInR4aWQiOm51bGwsInN0YXR1cyI6Im9wZW5lZCIsInBpeF9hY2NvdW50X2lkIjoyNCwicGF5ZXIiOnsibmFtZSI6IlBpeCBQYXJhIENhbmNlbGFyIiwiZG9jdW1lbnRfbnVtYmVyIjoiMDI0MzkyODcxODAifSwicXJjb2RlIjp7ImVtdiI6bnVsbCwicG5nIjpudWxsfSwiY3JlYXRlZF9hdCI6IjIwMjItMDItMjNUMTk6MDQ6MjYtMDM6MDAiLCJhbW91bnQiOjMxMS4wLCJleHBpcmVfYXQiOiIyMDIyLTAzLTAyVDEwOjAzOjU2LTAzOjAwIiwiY29tbWFuZF9pZHMiOltdfSx7ImlkIjoxOSwidHhpZCI6bnVsbCwic3RhdHVzIjoib3BlbmVkIiwicGl4X2FjY291bnRfaWQiOjI0LCJwYXllciI6eyJuYW1lIjoiTGVhbmRybyBQaXgiLCJkb2N1bWVudF9udW1iZXIiOiIwMjQzOTI4NzE4MCJ9LCJxcmNvZGUiOnsiZW12IjpudWxsLCJwbmciOm51bGx9LCJjcmVhdGVkX2F0IjoiMjAyMi0wMi0yM1QxOTowMzowOC0wMzowMCIsImFtb3VudCI6OTUwLjAsImV4cGlyZV9hdCI6IjIwMjItMDMtMDJUMTA6MDM6NTYtMDM6MDAiLCJjb21tYW5kX2lkcyI6W119LHsiaWQiOjE4LCJ0eGlkIjpudWxsLCJzdGF0dXMiOiJvcGVuZWQiLCJwaXhfYWNjb3VudF9pZCI6MjQsInBheWVyIjp7Im5hbWUiOiJOb3ZvIFRlc3RlIiwiZG9jdW1lbnRfbnVtYmVyIjoiMDI0MzkyODcxODAifSwicXJjb2RlIjp7ImVtdiI6bnVsbCwicG5nIjpudWxsfSwiY3JlYXRlZF9hdCI6IjIwMjItMDItMjNUMTM6MDQ6MDQtMDM6MDAiLCJhbW91bnQiOjkwMC4wLCJleHBpcmVfYXQiOiIyMDIyLTAzLTAyVDEwOjAzOjU2LTAzOjAwIiwiY29tbWFuZF9pZHMiOltdfSx7ImlkIjoxNywidHhpZCI6bnVsbCwic3RhdHVzIjoib3BlbmVkIiwicGl4X2FjY291bnRfaWQiOjI0LCJwYXllciI6eyJuYW1lIjoiTGVhbmRybyBQZXJlaXJhIEdvbWVzIiwiZG9jdW1lbnRfbnVtYmVyIjoiMDI0MzkyODcxODAifSwicXJjb2RlIjp7ImVtdiI6bnVsbCwicG5nIjpudWxsfSwiY3JlYXRlZF9hdCI6IjIwMjItMDItMjNUMTM6MDI6MzAtMDM6MDAiLCJhbW91bnQiOjUwMC4wLCJleHBpcmVfYXQiOiIyMDIyLTAzLTAyVDEwOjAzOjU2LTAzOjAwIiwiY29tbWFuZF9pZHMiOltdfSx7ImlkIjoxNiwidHhpZCI6bnVsbCwic3RhdHVzIjoib3BlbmVkIiwicGl4X2FjY291bnRfaWQiOjI0LCJwYXllciI6eyJuYW1lIjoiUGVkcm8gRW1hbnVlbCAiLCJkb2N1bWVudF9udW1iZXIiOiIwMjQzOTI4NzE4MCJ9LCJxcmNvZGUiOnsiZW12IjpudWxsLCJwbmciOm51bGx9LCJjcmVhdGVkX2F0IjoiMjAyMi0wMi0yM1QxMjozMzozOS0wMzowMCIsImFtb3VudCI6MzAwMC4wLCJleHBpcmVfYXQiOiIyMDIyLTAzLTAyVDEwOjAzOjU2LTAzOjAwIiwiY29tbWFuZF9pZHMiOltdfSx7ImlkIjoxNSwidHhpZCI6bnVsbCwic3RhdHVzIjoib3BlbmVkIiwicGl4X2FjY291bnRfaWQiOjI0LCJwYXllciI6eyJuYW1lIjoiTGVhbmRybyIsImRvY3VtZW50X251bWJlciI6IjAyNDM5Mjg3MTgwIn0sInFyY29kZSI6eyJlbXYiOm51bGwsInBuZyI6bnVsbH0sImNyZWF0ZWRfYXQiOiIyMDIyLTAyLTIyVDIyOjE3OjE0LTAzOjAwIiwiYW1vdW50Ijo0MDAwLjAsImV4cGlyZV9hdCI6IjIwMjItMDMtMDJUMTA6MDM6NTYtMDM6MDAiLCJjb21tYW5kX2lkcyI6W119LHsiaWQiOjE0LCJ0eGlkIjpudWxsLCJzdGF0dXMiOiJvcGVuZWQiLCJwaXhfYWNjb3VudF9pZCI6MjQsInBheWVyIjp7Im5hbWUiOm51bGwsImRvY3VtZW50X251bWJlciI6bnVsbH0sInFyY29kZSI6eyJlbXYiOm51bGwsInBuZyI6bnVsbH0sImNyZWF0ZWRfYXQiOiIyMDIyLTAyLTIyVDEyOjI3OjE3LTAzOjAwIiwiYW1vdW50IjoyMDAwLjAsImV4cGlyZV9hdCI6IjIwMjItMDMtMDJUMTA6MDM6NTYtMDM6MDAiLCJjb21tYW5kX2lkcyI6WzIsNCw2XX1dLCJwYWdpbmF0aW9uIjp7InByZXZfdXJsIjoiL2FwaS92Mi9jaGFyZ2UvcGl4P3BhZ2U9XHUwMDI2cGVyX3BhZ2U9NTAiLCJuZXh0X3VybCI6Ii9hcGkvdjIvY2hhcmdlL3BpeD9wYWdlPVx1MDAyNnBlcl9wYWdlPTUwIiwicGFnZSI6MX19
+  recorded_at: Thu, 24 Feb 2022 13:42:48 GMT
+recorded_with: VCR 6.0.0

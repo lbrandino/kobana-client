@@ -2,7 +2,8 @@ class PixsController < ApplicationController
   before_action :set_pix, only: %i[ show edit update destroy ]
   
   def index
-    @pixs = Kobana::IndexPix.new.call  
+    response = Kobana::IndexPix.new.call
+    @pixs = response.pixs
   end
   
   def show; end
